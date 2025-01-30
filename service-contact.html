@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Contact - Technology Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: var(--text-color);">
+            <h1>Technology Service</h1>
+        </a>
+        <div class="icons">
+            <a href="https://www.google.com/maps" target="_blank" class="map-icon">🗺️</a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html#pricing">Home Page</a></li>
+            <li><a href="index.html#pc-builder">PC Builder</a></li>
+            <li><a href="index.html#repair">Repair Service</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+        </ul>
+        <div class="sidebar-contact">
+            <h3>Contact Info</h3>
+            <p>📞 +48 581 431 444</p>
+            <p>✉️ Technology@service.com</p>
+        </div>
+    </nav>
+
+    <main class="service-contact-main">
+        <section class="service-contact-section">
+            <h2>Service Request Form</h2>
+            
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <div class="priority-notice">
+                        <h3>🚨 Emergency Service Required?</h3>
+                        <p>Call us directly at: <strong>+48 581 431 444</strong></p>
+                    </div>
+
+                    <form class="service-contact-form">
+                        <div class="form-group">
+                            <h4>Personal Information</h4>
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <h4>Device Information</h4>
+                            <select required>
+                                <option value="">Select Device Type</option>
+                                <option value="desktop">Desktop PC</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="server">Server</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="text" placeholder="Brand and Model (if known)">
+                            <input type="text" placeholder="Operating System">
+                        </div>
+
+                        <div class="form-group">
+                            <h4>Issue Description</h4>
+                            <select required>
+                                <option value="">Select Issue Type</option>
+                                <option value="hardware">Hardware Problem</option>
+                                <option value="software">Software Problem</option>
+                                <option value="network">Network Issue</option>
+                                <option value="performance">Performance Issue</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <textarea placeholder="Please describe the problem in detail..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <h4>Service Preference</h4>
+                            <select required>
+                                <option value="standard">Standard Service (2-3 business days)</option>
+                                <option value="express">Express Service (24 hours) +$29</option>
+                                <option value="same-day">Same Day Service +$49</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit Service Request</button>
+                    </form>
+                </div>
+
+                <div class="service-info-sidebar">
+                    <div class="info-card">
+                        <h4>📋 What to Expect</h4>
+                        <ul>
+                            <li>Confirmation email within 1 hour</li>
+                            <li>Free initial diagnosis</li>
+                            <li>Detailed cost estimate</li>
+                            <li>Professional consultation</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>⏰ Service Hours</h4>
+                        <ul>
+                            <li>Monday - Friday: 9:00 - 18:00</li>
+                            <li>Saturday: 10:00 - 16:00</li>
+                            <li>Sunday: Closed</li>
+                            <li>Emergency Service: 24/7</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>🛡️ Service Guarantee</h4>
+                        <ul>
+                            <li>90-day repair warranty</li>
+                            <li>Genuine parts only</li>
+                            <li>Data privacy guarantee</li>
+                            <li>No fix, no fee policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="service-contact.js"></script>
+</body>
+</html> 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Service - Technology Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: var(--text-color);">
+            <h1>Technology Service</h1>
+        </a>
+        <div class="icons">
+            <a href="https://www.google.com/maps" target="_blank" class="map-icon">🗺️</a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="index.html#pricing">Home Page</a></li>
+            <li><a href="index.html#pc-builder">PC Builder</a></li>
+            <li><a href="index.html#repair">Repair Service</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+        </ul>
+        <div class="sidebar-contact">
+            <h3>Contact Info</h3>
+            <p>📞 +48 581 431 444</p>
+            <p>✉️ Technology@service.com</p>
+        </div>
+    </nav>
+
+    <main class="repair-service-main">
+        <section class="repair-guide-section">
+            <h2>Computer Repair Guide</h2>
+            
+            <div class="quick-help">
+                <h3>🚨 Need Immediate Help?</h3>
+                <p>Call us at +48 581 431 444 for emergency support</p>
+                <a href="service-contact.html" class="emergency-button">Contact Now</a>
+            </div>
+
+            <div class="common-issues">
+                <h3>Common Issues and Solutions</h3>
+                
+                <div class="issue-card">
+                    <h4>💻 Computer Won't Turn On</h4>
+                    <div class="steps">
+                        <p class="step-title">Try these steps:</p>
+                        <ol>
+                            <li>Check if the power cable is properly connected</li>
+                            <li>Try a different power outlet</li>
+                            <li>Check if the power button on the PSU is switched on</li>
+                            <li>Listen for any beeping sounds when starting</li>
+                            <li>Remove and reseat the RAM modules</li>
+                        </ol>
+                        <p class="warning">If these steps don't help, your power supply or motherboard might need professional inspection.</p>
+                        <a href="service-contact.html" class="help-button">Get Professional Help</a>
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h4>🌡️ Computer Overheating</h4>
+                    <div class="steps">
+                        <p class="step-title">Quick solutions:</p>
+                        <ol>
+                            <li>Clean dust from vents and fans</li>
+                            <li>Ensure proper ventilation around the PC</li>
+                            <li>Check if all fans are spinning</li>
+                            <li>Close demanding applications</li>
+                            <li>Consider replacing thermal paste</li>
+                        </ol>
+                        <p class="tip">Regular cleaning can prevent most overheating issues!</p>
+                        <a href="service-contact.html" class="help-button">Schedule Cleaning Service</a>
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h4>🐌 Slow Performance</h4>
+                    <div class="steps">
+                        <p class="step-title">Performance improvement steps:</p>
+                        <ol>
+                            <li>Run disk cleanup and defragmentation</li>
+                            <li>Check for and remove malware</li>
+                            <li>Uninstall unnecessary programs</li>
+                            <li>Disable startup programs</li>
+                            <li>Consider upgrading RAM or adding an SSD</li>
+                        </ol>
+                        <p class="tip">Regular maintenance can keep your PC running smoothly!</p>
+                        <a href="service-contact.html" class="help-button">Get Performance Boost Service</a>
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h4>🔊 Strange Noises</h4>
+                    <div class="steps">
+                        <p class="step-title">Identify the noise:</p>
+                        <ul>
+                            <li><strong>Clicking:</strong> Possible hard drive failure</li>
+                            <li><strong>Grinding:</strong> Fan bearing issues</li>
+                            <li><strong>Buzzing:</strong> Loose component or cable</li>
+                            <li><strong>Whining:</strong> Power supply or GPU stress</li>
+                        </ul>
+                        <p class="warning">Unusual noises should be checked immediately to prevent damage!</p>
+                        <a href="service-contact.html" class="help-button">Schedule Inspection</a>
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h4>🖥️ Blue Screen Errors</h4>
+                    <div class="steps">
+                        <p class="step-title">Troubleshooting steps:</p>
+                        <ol>
+                            <li>Note down the error code</li>
+                            <li>Update or rollback drivers</li>
+                            <li>Check for Windows updates</li>
+                            <li>Run memory diagnostic</li>
+                            <li>Scan for malware</li>
+                        </ol>
+                        <p class="tip">Keep your drivers and Windows updated to prevent most blue screens!</p>
+                        <a href="service-contact.html" class="help-button">Get Expert Help</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maintenance-tips">
+                <h3>💡 Preventive Maintenance Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Monthly Tasks</h4>
+                        <ul>
+                            <li>Clean external dust</li>
+                            <li>Update software</li>
+                            <li>Run disk cleanup</li>
+                            <li>Check for malware</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Quarterly Tasks</h4>
+                        <ul>
+                            <li>Clean internal components</li>
+                            <li>Check drive health</li>
+                            <li>Update drivers</li>
+                            <li>Backup important data</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Yearly Tasks</h4>
+                        <ul>
+                            <li>Replace thermal paste</li>
+                            <li>Deep clean all components</li>
+                            <li>Check/upgrade hardware</li>
+                            <li>Professional inspection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

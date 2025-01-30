@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: var(--text-color);">
+            <h1>Technology Service</h1>
+        </a>
+        <div class="icons">
+            <a href="https://www.google.com/maps" target="_blank" class="map-icon">🗺️</a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="#top" class="smooth-scroll">Home Page</a></li>
+            <li><a href="#pc-builder" class="smooth-scroll">PC Builder</a></li>
+            <li><a href="#repair" class="smooth-scroll">Computer Repair</a></li>
+            <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+            <li><a href="#about" class="smooth-scroll">About Us</a></li>
+        </ul>
+        <div class="sidebar-contact">
+            <h3>Contact Info</h3>
+            <p>📞 +48 581 431 444</p>
+            <p>✉️ Technology@service.com</p>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <h2>Professional Computer Services</h2>
+            <p>Your trusted partner in technology solutions</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <!-- PC Builder Section -->
+        <section id="pc-builder" class="section-content">
+            <div class="pc-builder-content">
+                <div class="pc-builder-intro">
+                    <h3>Build Your Custom PC Online</h3>
+                    <p>Use our interactive PC configurator to create your perfect computer setup. Our system automatically checks component compatibility and calculates the total cost of your build.</p>
+                </div>
+                
+                <div class="pc-builder-grid">
+                    <div class="pc-builder-card">
+                        <div class="card-icon">🔄</div>
+                        <h4>Component Selection</h4>
+                        <p>Step-by-step component selection with compatibility checks</p>
+                        <ul>
+                            <li>High-end motherboards</li>
+                            <li>Latest CPUs and GPUs</li>
+                            <li>Various RAM options</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pc-builder-card">
+                        <div class="card-icon">✓</div>
+                        <h4>Compatibility Check</h4>
+                        <p>Automatic verification of component compatibility</p>
+                        <ul>
+                            <li>Socket compatibility</li>
+                            <li>RAM type matching</li>
+                            <li>Power requirements</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pc-builder-card">
+                        <div class="card-icon">💰</div>
+                        <h4>Price Calculator</h4>
+                        <p>Real-time price updates as you build</p>
+                        <ul>
+                            <li>Component prices</li>
+                            <li>Total cost calculation</li>
+                            <li>Price per component</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pc-builder-card">
+                        <div class="card-icon">📋</div>
+                        <h4>Build Summary</h4>
+                        <p>Complete overview of your configuration</p>
+                        <ul>
+                            <li>Selected components</li>
+                            <li>Technical details</li>
+                            <li>Final price</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pc-builder-cta">
+                    <a href="pc-builder.html" class="cta-button">Start Building Your PC</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Computer Repair Section -->
+        <section id="repair" class="section-content">
+            <div class="repair-header">
+                <h2>Professional Computer Repair Services</h2>
+                <p>Expert solutions for all your computer problems</p>
+            </div>
+            
+            <div class="repair-services-container">
+                <div class="repair-services-list">
+                    <div class="repair-column">
+                        <h3>Hardware Services</h3>
+                        <ul>
+                            <li>Motherboard diagnostics and repair</li>
+                            <li>CPU and GPU troubleshooting</li>
+                            <li>RAM and storage solutions</li>
+                            <li>Power supply replacement</li>
+                            <li>Cooling system optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="repair-column">
+                        <h3>Software Solutions</h3>
+                        <ul>
+                            <li>Operating system installation</li>
+                            <li>Virus removal and protection</li>
+                            <li>Data recovery services</li>
+                            <li>Software optimization</li>
+                            <li>Driver updates and maintenance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="repair-column">
+                        <h3>Performance Services</h3>
+                        <ul>
+                            <li>System performance optimization</li>
+                            <li>Hardware upgrades</li>
+                            <li>Gaming PC optimization</li>
+                            <li>Custom PC modifications</li>
+                            <li>Benchmark testing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="repair-cta">
+                    <a href="service-contact.html" class="repair-cta-button">Get Professional Help</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-content">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📍 ul. Główna 123, Kędzierzyn-Koźle</p>
+                    <p>📞 (+48) 581 431 444</p>
+                    <p>✉️ info@techservice.com</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40843.66832963147!2d18.195661341796875!3d50.34841879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47110f0c2d85c8dd%3A0xf395dd49d0e77d1b!2zS8SZZHppZXJ6eW4tS2_Fumxl!5e0!3m2!1spl!2spl!4v1647600000000!5m2!1spl!2spl"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-content">
+            <div class="about-container">
+                <div class="about-header">
+                    <h2>About Technology Service</h2>
+                    <p class="about-subtitle">Your Trusted Technology Partner Since 2010</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-section">
+                        <h3>Our Story</h3>
+                        <p>Founded in 2010 in Kędzierzyn-Koźle, Technology Service began as a small computer repair shop. Over the years, we've grown into a comprehensive technology solutions provider, serving thousands of satisfied customers across the region.</p>
+                        <p>Our journey has been driven by a passion for technology and a commitment to delivering exceptional service to every client who walks through our doors.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>Our Expertise</h3>
+                        <ul class="about-list">
+                            <li>Custom PC Building & Optimization</li>
+                            <li>Hardware & Software Troubleshooting</li>
+                            <li>Data Recovery & System Backup</li>
+                            <li>Network Setup & Security</li>
+                            <li>Gaming PC Specialization</li>
+                            <li>Business IT Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>Why Choose Us</h3>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <span class="feature-icon">⭐</span>
+                                <h4>Expert Team</h4>
+                                <p>Certified technicians with years of experience</p>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🛠️</span>
+                                <h4>Quality Parts</h4>
+                                <p>Only genuine components from trusted suppliers</p>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚡</span>
+                                <h4>Fast Service</h4>
+                                <p>Quick turnaround times for all repairs</p>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">💰</span>
+                                <h4>Fair Pricing</h4>
+                                <p>Transparent pricing with no hidden fees</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>Our Commitment</h3>
+                        <p>At Technology Service, we believe in building long-term relationships with our clients. We achieve this through:</p>
+                        <ul class="commitment-list">
+                            <li>Transparent communication throughout every project</li>
+                            <li>Detailed explanations of technical issues and solutions</li>
+                            <li>Post-service support and guidance</li>
+                            <li>Regular updates on technology trends and security measures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8000+</span>
+                        <span class="stat-label">Completed Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Technology Service</h3>
+                <p>Your trusted partner in technology solutions. Professional computer services and custom PC building.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#top" class="smooth-scroll">Home</a></li>
+                    <li><a href="#pc-builder" class="smooth-scroll">PC Builder</a></li>
+                    <li><a href="#repair" class="smooth-scroll">Repair Services</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps">📍 ul. Główna 123, Kędzierzyn-Koźle</a></li>
+                    <li><a href="tel:+48581431444">📞 +48 581 431 444</a></li>
+                    <li><a href="mailto:Technology@service.com">✉️ Technology@service.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Working Hours</h3>
+                <p>Monday - Friday: 9:00 - 17:00</p>
+                <p>Saturday: 10:00 - 14:00</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Technology Service. All rights reserved. </p>
+            </p>&copy; Alan Maroń, Łukasz Ornatowski.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
