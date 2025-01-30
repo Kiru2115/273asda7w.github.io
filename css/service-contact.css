@@ -1,0 +1,74 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #2980b9, #e67e22);
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    animation: slide-in 0.3s ease-out;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-message {
+    font-size: 16px;
+}
+
+.notification-close {
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.submission-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.submission-message p {
+    margin: 5px 0;
+}
+
+.submission-message p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+}
+
+.fade-out {
+    animation: fade-out 0.3s ease-out forwards;
+} 
