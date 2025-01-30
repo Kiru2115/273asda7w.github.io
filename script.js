@@ -42,4 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.add('hidden');
         }
     });
+
+    // Dodajemy nową obsługę kliknięcia dla menu
+    const menuIcon = document.querySelector('.menu-icon');
+    const menuImage = menuIcon.querySelector('img');
+    
+    menuIcon.addEventListener('click', toggleMenu);
+    menuImage.addEventListener('click', function(e) {
+        e.stopPropagation(); // Zatrzymujemy propagację
+        toggleMenu();
+    });
 });
